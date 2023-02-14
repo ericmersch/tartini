@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Tartini</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+
+<body>
+  frequency f1 <input type="range" id="fIn1" min="50" max="1200" oninput="show()"/><span id="fOut1"></span><br/>
+
+  frequency f2 <input type="range" id="fIn2" min="50" max="1200" oninput="show()"/><span id="fOut2"></span><span id="vOut"></span><br/>
+
+  <br/>
+
+  <button onclick="osc1()">only f1</button><button onclick="osc2()">only f2</button><button onclick="osc12()">f1 and f2</button><button onclick="tartini1()">f1-f2</button>
+
+  <p id="t1"></p>
+
+  <script>
+        
+  audioCtx = new(window.AudioContext || window.webkitAudioContext)();
+
+  show();
+        
+  function show() {
+  	f1 = (document.getElementById("fIn1").value);
+  	document.getElementById("fOut1").innerHTML = f1 + ' Hz';
+
+  	f2 = (document.getElementById("fIn2").value);
+  	document.getElementById("fOut2").innerHTML = f2 + ' Hz';
+            
+        fR1 = f1 - f2;
+        document.getElementById("t1").innerHTML = 'f1-f2 = '+ fR1 + ' Hz';
+            
+}
+       
+        
+        
+  function player (freq) {
+
+            
+  var osc = audioCtx.createOscillator();
+  var gainNode = audioCtx.createGain();
+
+  osc.connect(gainNode);
+  gainNode.connect(audioCtx.destination);
+
+  gainNode.gain.value = 0.3;
+  osc.frequency.value = freq;
+  osc.type = "sine";
+
+  osc.start();
+
+  setTimeout(
+    function() {
+      osc.stop();
+    },
+    2000
+  );
+  };
+        
+
+        function osc1 () {
+            player (f1);
+        };
+        function osc2 () {
+            player (f2);
+        };
+        
+        function osc12 () {
+            player (f1);
+            player (f2);
+        };
+        
+        function tartini1 () {
+            player (fR1);
+        };
+        function tartini2 () {
+            player (fR2);
+        };
+        function tartini3 () {
+            player (fR3);
+        };
+        function tartini4 () {
+            player (fR4);
+        };
+    </script>
+</body>
+</html>
