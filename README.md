@@ -3,6 +3,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
@@ -21,7 +22,9 @@ More information can be found here:
 </p>
 <a href="https://en.wikipedia.org/wiki/Combination_tone">https://en.wikipedia.org/wiki/Combination_tone</a>
 <br/>
-<img src="466px-Giuseppe_Tartini.jpg">
+<div class="w3-container">
+  <img class="w3-animate-fading" src="466px-Giuseppe_Tartini.jpg">
+</div>
 
 <br/>
   frequency f1 <input type="range" id="fIn1" min="50" max="1200" oninput="show()"/><span id="fOut1"></span><br/>
