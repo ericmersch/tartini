@@ -1,8 +1,7 @@
-<!DOCTYPE html>
+
 
 <html>
 <head>
-  <title>Tartini</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 
@@ -33,17 +32,14 @@ More information can be found here:
   <br/>
 
 
-<p>Components only
-</p>
+<p>Components only</p>
   <button onclick="osc1()">only f1</button>
   <button onclick="osc2()">only f2</button>
   
-  <p>The two components together
-</p>
+  <p>The two components together</p>
   <button onclick="osc12()">f1 and f2</button>
   
-    <p>The resulting tones only
-</p>
+    <p>The resulting tones only</p>
   <button onclick="tartini1()">f1-f2</button>
   <button onclick="tartini2()">f1+f2</button>
   <button onclick="tartini3()">2 f1-f2</button>
