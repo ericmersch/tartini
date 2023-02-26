@@ -22,8 +22,8 @@ More information can be found here:
 </p>
 <a href="https://en.wikipedia.org/wiki/Combination_tone">https://en.wikipedia.org/wiki/Combination_tone</a>
 <br/>
-<div class="w3-container">
-  <img class="w3-animate-fading" src="466px-Giuseppe_Tartini.jpg">
+<div>
+  <img src="466px-Giuseppe_Tartini.jpg">
 </div>
 
 <br/>
