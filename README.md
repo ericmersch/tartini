@@ -9,7 +9,7 @@
 <body>
 
 <p>
-We are familiar with the combination of colours: it is well known that adding green and red light result in the perception of yellow. But we are usually less concious of a similar phenomenon occuring with sound: when adding two pure sine waves of 800Hz and 1000Hz, one can hear a third sound at 200 Hz. This tone is not present in the acoustic signal, but it is thought to result from a non-linear phenomenon in the inner ear. These resultant tones fascinate me because they are like a ghost tones, or illusions. One call them Tartni tones, or resultant tones. 
+We are familiar with the combination of colours: it is well known that adding green and red light result in the perception of yellow. But we are usually less concious of a similar phenomenon occuring with sound: when adding two pure sine waves of 800Hz and 1000Hz, one can hear a third sound at 200 Hz. This tone is not present in the acoustic signal, but it is thought to result from a non-linear phenomenon in the inner ear. These resultant tones fascinate me because they are like a ghost tones, or illusions. One call them Tartini tones, or resultant tones. 
 <br/>
 When adding two sine waves of fequencyes f1 and f2, the most common resultant tones frequencies are f1-f2, f1+f2, 2 f1-f2, 2 f2-f1.
 <br/>
