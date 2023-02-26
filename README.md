@@ -98,7 +98,7 @@ More information can be found here:
     function() {
       osc.stop();
     },
-    2000
+    3000
   );
   };
         
